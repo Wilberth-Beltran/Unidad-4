@@ -1,14 +1,14 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 :root {
     --color-azul: #002C8E;
     --color-Azul-secundario: #21B6FF;
     --color-Azul-terciario: #98A5C2;
     --tamano-fuente: 16px;
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
 body {
@@ -1203,7 +1203,7 @@ form button:hover {
 
 }
 
-@media screen and (max-width: 431px) {
+@media screen and (max-width: 731px) {
     .padre-div1{
         display: none;
     }
@@ -1244,7 +1244,7 @@ form button:hover {
     }
 
     .div-seccion{
-        width: 400px;
+        width: 380px;
         margin-left: 10px;
     }
     .div1-2{
@@ -1336,6 +1336,15 @@ form button:hover {
     .seccion-finaldiv2{
         margin-left: 0px;
         width: 320px;
+    }
+    .footer1{
+        flex-direction: column;
+    }
+    .div1-footer{
+        flex-direction: column;
+    }
+    .div2-footer{
+        flex-direction: column;
     }
 }
 
