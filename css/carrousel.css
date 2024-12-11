@@ -1,0 +1,266 @@
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#carousel {
+  max-width: 1380px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden; /* Esconde las imágenes que salen fuera del contenedor */
+}
+
+/* Estilo del contenedor de las diapositivas */
+#slide-container {
+  scroll-snap-type: x mandatory; /* Agrega la alineación de desplazamiento */
+  overflow-x: scroll;  /* Habilita el desplazamiento horizontal */
+  overflow-y: hidden;  /* Deshabilita el desplazamiento vertical */
+  -ms-overflow-style: none;  /* Oculta la barra de desplazamiento en IE y Edge */
+  scrollbar-width: none;  /* Oculta la barra de desplazamiento en Firefox */
+  display: flex;
+  scroll-behavior: smooth; /* Desplazamiento suave */
+
+}
+#slide-container::-webkit-scrollbar {
+  display: none;  /* Oculta la barra de desplazamiento en Chrome, Safari y Opera */
+}
+
+/* Cada diapositiva */
+.slide {
+  padding: 40px 0px;
+  scroll-snap-align: center; /* Alinea cada diapositiva al centro */
+  position: relative;
+  min-width: calc(100% / 4); /* Ajusta el ancho al 25% del contenedor */
+  text-align: center;
+  justify-content: center;
+  width: 200px;
+  transition: transform 1s ease; /* Asegura una transición suave */
+}
+
+
+/* Estilo de los botones de navegación */
+.carousel-btn {
+  position: absolute;
+  top: 80%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+#back-button {
+  left: 0;
+}
+
+#forward-button {
+  right: 0px;
+}
+
+.diseñopagado{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 80px;
+  margin-right: 50px;
+  color: #002C8E;
+}
+
+/* Diseño general */
+
+.diseñopagado h3{
+  font-size: 25px;
+  width: 150px;
+}
+
+.diseñopagado h1{
+  font-size: 40px;
+  width: 300px;
+  line-height: 1.1;
+}
+
+
+/*-------------------------------------------------------------------*/
+
+/* Estilos del carrusel */
+#carousel2 {
+  max-width: 1380px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden; /* Esconde las imágenes que salen fuera del contenedor */
+}
+
+/* Estilo del contenedor de las diapositivas */
+#slide-container2 {
+  scroll-snap-type: x mandatory; /* Agrega la alineación de desplazamiento */
+  overflow-x: scroll;  /* Habilita el desplazamiento horizontal */
+  overflow-y: hidden;  /* Deshabilita el desplazamiento vertical */
+  -ms-overflow-style: none;  /* Oculta la barra de desplazamiento en IE y Edge */
+  scrollbar-width: none;  /* Oculta la barra de desplazamiento en Firefox */
+  display: flex;
+  scroll-behavior: smooth; /* Desplazamiento suave */
+
+}
+#slide-container2::-webkit-scrollbar {
+  display: none;  /* Oculta la barra de desplazamiento en Chrome, Safari y Opera */
+}
+
+/* Cada diapositiva */
+.slide2 {
+  padding: 40px 0px;
+  scroll-snap-align: center; /* Alinea cada diapositiva al centro */
+  position: relative;
+  min-width: calc(100% / 3); /* Ajusta el ancho al 25% del contenedor */
+  text-align: center;
+  width: 200px;
+  transition: transform 1s ease; /* Asegura una transición suave */
+  height: 400px;
+}
+
+.slide2 img{
+  width: 100%;
+  height: 100%;
+  transition: filter 0.3s ease-in-out;
+}
+
+.slide2 figure{
+  width: 300px;
+  height: 280px;
+
+}
+
+.slidediseño{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Estilo de los botones de navegación */
+.carousel-btn2 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+#back-button2 {
+  left: 0;
+}
+
+#forward-button2 {
+  right: 0px;
+}
+
+.diseñopagado2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 80px;
+  margin-right: 50px;
+  color: #002C8E;
+}
+
+/* Diseño general */
+
+.diseñopagado2 h3{
+  font-size: 25px;
+}
+
+.diseñopagado2 h1{
+  font-size: 40px;
+  width: 300px;
+  line-height: 1.1;
+}
+.letras-diseño h1{
+width: 800px;
+
+}
+.letras-diseño h3{
+  font-size: 15px;
+  color: #21B6FF;
+  margin-bottom: 15px;
+}
+
+.letras-diseño div{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.image-container{
+  position: relative;
+}
+
+.overlay-text{
+  position: absolute;
+  top: 100%; /* Centra verticalmente */
+  left: 50%; /* Centra horizontalmente */
+  transform: translate(-50%, -50%); /* Ajusta para centrar perfectamente */
+  color: rgb(0, 0, 0); /* Asegúrate de que el texto sea visible sobre la imagen */
+  font-size: 2rem; /* Puedes ajustar el tamaño */
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);  padding: 10px 10px;
+  width: 280px;
+  text-align: center;
+  transition: transform 0.6s ease-in-out; 
+}
+
+.image-container:hover img {
+  filter: brightness(50%); /* Aplica un filtro negro al pasar el mouse */
+}
+
+.image-container:hover .overlay-text {
+  top: 100%; /* Mantén la posición del texto en la mitad de la imagen */
+  transform: translate(-50%, -50%) translateY(-100%); /* Sube el h3 al pasar el mouse */
+}
+
+/*-----------------------------------------*/
+@media screen and (max-width: 431px) {
+
+  .diseñopagado{
+    flex-direction: column;
+  }
+  .slide {
+    min-width: calc(100% / 1); 
+    width: 50px;
+
+  }
+
+  .slide2 {
+    min-width: calc(100% / 1); /* Ajusta el ancho al 25% del contenedor */
+    width: 70px;
+    transition: transform 1s ease; /* Asegura una transición suave */
+
+  }
+  .diseñopagado2{
+    margin-left: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .diseñopagado2 h1{
+    font-size: 25px;
+    width: 320px;
+    line-height: 1.1;
+  }
+}
+
+
