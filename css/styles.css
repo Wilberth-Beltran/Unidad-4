@@ -99,7 +99,7 @@ body {
 .slider1 {
     height: 826px;
     /* Altura del contenedor */
-    background-image: url('/img/slider01.jpg');
+    background-image: url('./img/slider01.jpg');
     /* Imagen de fondo */
     background-repeat: no-repeat;
     /* Evita que la imagen se repita */
@@ -326,7 +326,7 @@ body {
     display: flex;
     justify-content: space-around;
     padding: 40px 0;
-    background-image: url('/img/slider02.jpg');
+    background-image: url('./img/slider02.jpg');
     /* Imagen de fondo */
     background-repeat: no-repeat;
     /* Evita que la imagen se repita */
@@ -878,7 +878,7 @@ html ul.tabs li.active a:hover{
     color: white;
     padding: 100px;
     position: relative;
-    background-image: url(/img/slidesig.jpg);
+    background-image: url(./img/slidesig.jpg);
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
