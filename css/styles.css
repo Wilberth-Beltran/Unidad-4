@@ -888,7 +888,316 @@ html ul.tabs li.active a:hover{
 
 .letras1{
     z-index: 3;
-    position: absolute;
+    position: absolute;SinceSince there is no selected code, I will provide a general improvement to the entire code file. Here's a modified version of the code with some improvements:
+
+```css
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-azul: #002C8E;
+  --color-Azul-secundario: #21B6FF;
+  --color-Azul-terciario: #98A5C2;
+  --tamano-fuente: 16px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: var(--tamano-fuente);
+  line-height: 24px;
+  color: #333;
+  border: #333 solid 1px;
+}
+
+/* Header Styles */
+
+.padre-div1 {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  background-color: var(--color-azul);
+  color: white;
+}
+
+.hijo-div1 {
+  display: flex;
+  align-items: center;
+  width: 600px;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hijo-del-hijo {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  text-align: center;
+}
+
+.padre-div2 {
+  width: 200px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+/* Menu Styles */
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 18px 0px;
+}
+
+.bar {
+  display: none;
+}
+
+.menu-hijo1 img {
+  width: 100%;
+}
+
+.menu-hijo1 {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.menu-hijo2 ul {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.menu-hijo2 ul,
+a {
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  font-weight: bold;
+}
+
+.booto1 {
+  padding: 10px 25px;
+  background-color: var(--color-Azul-secundario);
+  border-radius: 5px;
+  color: white;
+}
+
+/* Slider Styles */
+
+.slider1 {
+  height: 826px;
+  background-image: url('./img/slider01.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.margen {
+  margin-left: 110px;
+}
+
+.hijo-slider1 {
+  margin-bottom: 45px;
+}
+
+.hijo-slider1 h1 {
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.hijo-slider1 h2 {
+  font-size: 85px;
+  width: 800px;
+  word-wrap: break-word;
+  line-height: 1.1;
+  color: white;
+}
+
+.hijo2-slider2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boton2 {
+  padding: 25px 45px;
+  background-color: var(--color-Azul-secundario);
+  color: white;
+  margin-right: 15px;
+}
+
+/* Aura Button Styles */
+
+.aura-boton {
+  position: relative;
+  display: inline-block;
+  height: 70px;
+  width: 70px;
+}
+
+.aura-boton i {
+  position: relative;
+  z-index: 1;
+  font-size: 30px;
+  padding: 19px 18px;
+  text-align: center;
+  display: block;
+  color: #fff;
+  background: var(--color-Azul-secundario);
+   border-radius: 50%;
+}
+
+.aura-bosition: absolute;
+    content: '';
+    width: 100%;
+       width:dth: 70px;
+}
+
+.aura-boton i {
+    position: relative
+
+.aura-boton {
+    position: relative;
+    display: inline-block;
+    height
+
+.boton2 {
+  padding: 25
+.boton2 {
+   justifyh  word-wrap: break-word;
+  line-height: 1.1ak-word;
+
+     width: 800px;
+  word-wrap
+}
+
+.hijo-slider1 h2 {
+  font-size: 85 h2 {
+  fonthijo-slider1 h: bold;
+  margin-bottom: 15px;
+}
+
+.h   font-size: 1 h1 {
+ }
+
+.hijo-slider1tom: 
+ 
+.hijo
+    font-size:
+  margin-left
+
+.hijo-slidergn   margin-bottom:
+}
+
+.h  background-size6px;
+  background-image: url('./img/slider01.jpg');
+  background background-image: url('./img/slider01
+  height: 826px;
+  background-image: url
+.slider1 {
+
+
+.booto1 {
+  padding: 10px
+.booto1 {
+  padding text-decoration: none;
+
+
+.menu-hijo2 ul,
+a {
+  textmenu-hijo2 ul,
+
+
+.menu-hplay: flex;
+{
+ .menu-hijo2 ul, a {
+ter;
+ter;
+}
+
+.menu-hijo2gn-items: center;
+  justify-content:
+}
+
+.menu
+
+.menu-hijo1 {
+    align-items:
+}
+
+.menu    width: 
+8px 0pxer;
+  justify-content: center;
+  text-align: center;
+  letter-spacing:
+  justify-content: center;
+  text justify-content:
+  width: 200lign: center;
+}
+
+.padre
+.hijo-del-hijo {
+  display: flex;
+  gap
+.hijo-del-hijo {
+  display:
+
+.h  justify-content: flex;
+  align-items: center;
+  width: 600pxs: center;
+  width display: flex;
+  align-items:
+
+.hijo-div1 {
+ 
+.hijopadding: 10px 0;
+  background-color0px 0nt: space-around;
+
+
+.pad  border: #ight: 24px;
+  color: #333;
+: 24px;
+  color line-height: 24Arial, sans-serif;
+  font-size: 16px;
+  line font-family: Arial, sans-serif;
+  font-size: 16
+  font-family: Arial, sans-serif;
+  font font-family
+body  --color-Azul-secundario: #21B6FF;
+  --color-Azul-terciario: #98A5C2;
+  -- --color-Azul-terciario: #98A5C6FF;
+  --color-Azul-terciario: #: #21B6FF;
+  --color-Azul-tersecundario: #21B6FF;
+  --color-A-azul: #002C8E;
+  --color-Azul-secundario: #21B6FF;
+
+  --color-azul: #002C8E;
+  --color-Azul-secundario: #21
+  --color-Azul-secund02C8E;
+  --color-Azazul-Azul-secundario: #21B6FF;
+  --color-Azul-tercicundario: #21B6FF;
+  --color-Azodified version of the code with some improvements:
+
+```css
+/* Global Styles */
+
+* {
+'sfile.t to theent a
     display: flex;
     flex-direction: column;
     margin: auto;
