@@ -43,8 +43,13 @@
             <figure class="menu-hijo1">
                 <img src='img/logo.png' alt='Texto descriptivo'>
             </figure>
+            <div>
+                <div id="bar1" class="bar">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
             <div class="menu-hijo2">
-                <ul>
+                <ul id="ul01" class="ul1">
                     <li><a href='#'>Home</a></li>
                     <li><a href='#'>Company</a></li>
                     <li><a href='#'>Portafolio</a></li>
@@ -730,6 +735,15 @@
 
 <!-- Scripts -->
   <script> 
+
+$("#bar1").click(function () {
+            $('#ul01').toggleClass('abrir_menu');
+        });
+
+        $("#bar1").click(function () {
+            $('.slider1').toggleClass('espacio_menu');
+        });
+        
 
 function openModal() {
     document.getElementById('modal').style.display = 'flex';

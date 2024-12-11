@@ -1210,15 +1210,54 @@ form button:hover {
     .menu{
         flex-direction: column;
     }
+    .ul1{
+        display: block;
+        width: 100%; /* Ocupar todo el ancho */
+        align-items: center; /* Centrar elementos */
+        justify-content: center;
+        position:absolute;
+        visibility: hidden; /* Oculto inicialmente */
+        overflow: hidden; /* Ocultar el contenido */
+        opacity: 0;
+        height: auto;
+        right: 1px;
+        top: 115px;
+        background-color: var(--color-Azul-secundario);
+        z-index: 1000;  
+        transition: all 1.5s ease;
+    }
+    .ul1 li{
+        width: auto;
+        border-top: var(--color-Azul-terciario) 1px solid;
+        padding: 17px 200px;
+    }
+
+    .abrir_menu{
+        visibility: visible;
+        height: auto;
+        opacity: 1;
+        transition: all 1.5s ease;
+    }
+    .espacio_menu{
+        margin-top: 260px;
+        transition: all 1s ease;
+    }
+
     .menu-hijo2 ul{
         flex-direction: column;
-        width: 300px;
+        width: 430px;
         border: #002C8E solid 1px;
+        gap: 0;
     }
+    .booto1{
+        display: none;
+    }
+
     .slider1{
         justify-content: center;
         align-items: center;
         text-align: center;
+        transition: all 1s ease;
     }
 
     .hijo-slider1 h1 {
