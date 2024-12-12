@@ -9,6 +9,7 @@
     --color-Azul-secundario: #21B6FF;
     --color-Azul-terciario: #98A5C2;
     --tamano-fuente: 16px;
+    --color-blanco: #ffffff;
 }
 
 body {
@@ -16,15 +17,38 @@ body {
     font-size: 16px;
     line-height: 24px;
     color: #333;
-    border: #333 solid 1px;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Estilo específico para h1 con Merriweather */
+h1{
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+p{
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2{
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
 
 .padre-div1 {
     display: flex;
     justify-content: space-around;
     padding: 10px 0;
     background-color: var(--color-azul);
-    color: white;
+    color: var(--color-blanco);
 }
 
 .hijo-div1 {
@@ -90,7 +114,7 @@ body {
     padding: 10px 25px;
     background-color: var(--color-Azul-secundario);
     border-radius: 5px;
-    color: white;
+    color: var(--color-blanco);
 }
 
 /*--------------------------------------------------------------------*/
@@ -99,7 +123,7 @@ body {
 .slider1 {
     height: 826px;
     /* Altura del contenedor */
-    background-image: url('./img/slider01.jpg');
+    background-image: url('/img/slider01.jpg');
     /* Imagen de fondo */
     background-repeat: no-repeat;
     /* Evita que la imagen se repita */
@@ -123,7 +147,7 @@ body {
 
 .hijo-slider1 h1 {
     font-size: 25px;
-    color: white;
+    color: var(--color-blanco);
     font-weight: bold;
     margin-bottom: 15px;
 }
@@ -133,7 +157,7 @@ body {
     width: 800px;
     word-wrap: break-word;
     line-height: 1.1;
-    color: white;
+    color: var(--color-blanco);
 
 }
 
@@ -147,7 +171,7 @@ body {
 .boton2 {
     padding: 25px 45px;
     background-color: var(--color-Azul-secundario);
-    color: white;
+    color: var(--color-blanco);
     margin-right: 15px;
 }
 
@@ -170,7 +194,7 @@ body {
     padding: 19px 18px;
     text-align: center;
     display: block;
-    color: #fff;
+    color: var(--color-blanco);
     background: var(--color-Azul-secundario);
     border-radius: 50%;
 }
@@ -271,7 +295,7 @@ body {
 .boton3 a {
     padding: 25px 35px;
     background-color: var(--color-Azul-secundario);
-    color: white;
+    color: var(--color-blanco);
     width: 225px;
     text-decoration: none;
     list-style: none;
@@ -326,7 +350,7 @@ body {
     display: flex;
     justify-content: space-around;
     padding: 40px 0;
-    background-image: url('./img/slider02.jpg');
+    background-image: url('/img/slider02.jpg');
     /* Imagen de fondo */
     background-repeat: no-repeat;
     /* Evita que la imagen se repita */
@@ -344,7 +368,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 45, 142, 0.856);
+    background-color: var(--color-azul);
     /* Color con transparencia */
     z-index: 1;
     /* Asegúrate de que el filtro esté sobre la imagen */
@@ -368,7 +392,7 @@ body {
     font-size: 40px;
     width: 700px;
     line-height: 1.1;
-    color: white;
+    color: var(--color-blanco);
 
 }
 
@@ -384,13 +408,13 @@ body {
     list-style: none;
     padding: 20px 30px;
     background-color: var(--color-Azul-secundario);
-    color: white;
+    color: var(--color-blanco);
     border-radius: 5px;
     font-size: 20px;
 }
 
 .tercediv2 a {
-    color: white;
+    color: var(--color-blanco);
     font-size: 20px;
 }
 
@@ -510,7 +534,7 @@ body {
     top: 10px;
     right: 10px;
     font-size: 3rem;
-    color: #ffffff;
+    color: var(--color-blanco);
     cursor: pointer;
     font-weight: bold;
 }
@@ -558,7 +582,7 @@ body {
 .tamaño2 a {
     padding: 25px 35px;
     background-color: var(--color-Azul-secundario);
-    color: white;
+    color: var(--color-blanco);
     width: 225px;
     text-align: center;
     text-decoration: none;
@@ -581,7 +605,7 @@ body {
 .fotos img {
     width: 100%;
     border-radius: 50%;
-    border: #0800a985 3px solid;
+    border: var(--color-azul) 3px solid;
 }
 
 .fotos {
@@ -652,30 +676,40 @@ body {
 
 .info h1 {
     line-height: 1.2;
-    font-size: 22px;
-    color: white;
+    font-size: 23px;
+    color: var(--color-blanco);
     text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-.info h3 h4{
-    color: white;
+.info h3{
+    color: var(--color-blanco);
+    font-size: 18px;
 }
 
 .info p {
     text-align: left;
     width: 650px;
-    color: white;
+    font-size: 15px;
+    color: var(--color-blanco);
     margin-bottom: 10px;
 }
 
+.info h4{
+    color: white;
+    font-size: 15px;
+    font-weight: 10px;
+}
 
-.degradado {
+
+.degradado{
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
     z-index: 2;
     position: absolute;
-    background: linear-gradient(90deg, #3f4fffb3 0%, #3f4fffb3  100%);
+    background: linear-gradient(90deg, #161b5ad6 0%, #161b5ad6  100%);
 
 }
 
@@ -687,7 +721,7 @@ body {
     top: 50%;
     transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+    color: var(--color-blanco);
     border: none;
     padding: 10px;
     cursor: pointer;
@@ -774,6 +808,7 @@ body {
     text-align: center;
     align-items: center;
     justify-content: center;
+    line-height: 1.2;
     margin-top: 30px;
 }
 
@@ -809,7 +844,7 @@ ul.tabs li{
 
 ul.tabs li a{
     text-decoration: none;
-    color: white;
+    color: var(--color-blanco);
     display: inline-block;
     width: 100%;
     padding: 30px 30px;
@@ -818,12 +853,12 @@ ul.tabs li a{
 
 html ul.tabs li.active{
     background-color: var(--color-azul);
-    color: white;
+    color: var(--color-blanco);
 }
 
 html ul.tabs li.active a:hover{
         background-color: var(--color-azul);
-        color: white;
+        color: var(--color-blanco);
     }
 
 .tab_content{
@@ -875,10 +910,10 @@ html ul.tabs li.active a:hover{
 
 
 .fotoparalax{
-    color: white;
+    color: var(--color-blanco);
     padding: 100px;
     position: relative;
-    background-image: url(./img/slidesig.jpg);
+    background-image: url(/img/slidesig.jpg);
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
@@ -904,22 +939,20 @@ html ul.tabs li.active a:hover{
 .clasbotonmodalcont{
     padding: 20px 30px;
     border-radius: 10px;
-    background-color: #002C8E;
-    color: white;
+    background-color: var(--color-azul);
+    color: var(--color-blanco);
     cursor: pointer;
 
 }
 
-.degradado{
+.degradado2{
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
     z-index: 2;
     position: absolute;
-    background: rgba(4, 220, 177, 0.148);
     background: linear-gradient(90deg, rgba(73, 87, 245, 0.33) 0%, rgba(73, 87, 245, 0.33) 100%);
-
 }
 
 /*modal*/
@@ -940,7 +973,7 @@ html ul.tabs li.active a:hover{
 
 /* Modal Content */
 .modal-content {
-    background-color: #fff;
+    background-color: var(--color-blanco);
     padding: 20px;
     border-radius: 10px;
     width: 90%;
@@ -955,7 +988,7 @@ html ul.tabs li.active a:hover{
     position: absolute;
     top: 10px;
     right: 10px;
-    color: #001D5C;
+    color: var(--color-azul);
     font-size: 24px;
     cursor: pointer;
 }
@@ -976,14 +1009,14 @@ form input, form textarea, form button {
 }
 
 form button {
-    background-color: #002C8E;
-    color: white;
+    background-color: var(--color-azul);
+    color: var(--color-blanco);
     cursor: pointer;
     border: none;
 }
 
 form button:hover {
-    background-color: #001D5C;
+    background-color: var(--color-azul);
 }
 
 .modal-content h2{
@@ -1050,6 +1083,26 @@ form button:hover {
     margin-bottom: 10px;
 }
 
+/*flecha*/
+
+.flecha{
+    padding: 10px 12px;
+    z-index: 200;
+    position: fixed;
+    right: 50px;
+    bottom: 100px;
+    background-color: var(--color-azul);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    }
+.flecha i{
+    font-size: 20px;
+    color: var(--color-blanco);
+}
+
 /*FOOTER*/
 .footerprincipal{
     display: flex;
@@ -1081,7 +1134,7 @@ form button:hover {
 }
 .div2-2-2-footer h1{
     font-size: 25px;
-    color: white;
+    color: var(--color-blanco);
 }
 
 
@@ -1100,7 +1153,7 @@ form button:hover {
 .div2-2-footer{
     width: 180px;
     margin-left: 15px;
-    color: white;
+    color: var(--color-blanco);
 }
 
 .div2-2-footer h2{
@@ -1121,15 +1174,15 @@ form button:hover {
 .logofooter p{
     margin-top: 20px;
     margin-bottom: 20px;
-    color: white;
+    color: var(--color-blanco);
 }
 
 .logofooter i{
     margin-left: 10px;
     padding: 10px 10px;
-    background-color: #1145b4;
+    background-color: var(--color-azul);
     border-radius: 8px;
-    color: white;
+    color: var(--color-blanco);
 }
 
 .logofooter2{
@@ -1138,17 +1191,17 @@ form button:hover {
 
 .logofooter2 h4{
     font-size: 25px;
-    color: white;
+    color: var(--color-blanco);
     
 }
 
 .logofooter2 a{
-    color: white;
+    color: var(--color-blanco);
     font-weight:100;
 
 }
 .logofooter2 li{
-    color: white;
+    color: var(--color-blanco);
     margin-top: 20px;
     text-decoration: none;
     list-style: none;
@@ -1162,7 +1215,7 @@ form button:hover {
 
 .ultimodiv-1 h1{
     font-size: 25px;
-    color: white;
+    color: var(--color-blanco);
 }
 
 .ultimodiv-1-2{
@@ -1171,18 +1224,18 @@ form button:hover {
     justify-content: start;
     align-items: center;
     margin-top: 30px;
-    color: white;
+    color: var(--color-blanco);
 }
 
 .derechos{
     display: flex;
     justify-content: space-between;
-    background-color: #001D5C;
+    background-color: var(--color-azul);
     padding: 30px 0;
 }
 
 .derechos p{
-    color: white;
+    color: var(--color-blanco);
     font-size: 15px;
     margin-left: 190px;
 }
@@ -1199,13 +1252,13 @@ form button:hover {
 }
 
 .derechos a{
-    color: white;
+    color: var(--color-blanco);
     font-size: 15px;
     font-weight: 200;
 
 }
 
-@media screen and (max-width: 731px) {
+@media screen and (max-width: 431px) {
     .padre-div1{
         display: none;
     }
@@ -1251,7 +1304,7 @@ form button:hover {
     .menu-hijo2 ul{
         flex-direction: column;
         width: 430px;
-        border: #002C8E solid 1px;
+        border: var(--color-azul) solid 1px;
         gap: 0;
     }
     .booto1{
@@ -1267,7 +1320,7 @@ form button:hover {
 
     .hijo-slider1 h1 {
         font-size: 20px;
-        color: white;
+        color: var(--color-blanco);
         font-weight: bold;
         margin-bottom: 15px;
     }
@@ -1277,7 +1330,7 @@ form button:hover {
         width: 400px;
         word-wrap: break-word;
         line-height: 1.1;
-        color: white;
+        color: var(--color-blanco);
     
     }
     .hijo-seccion1 {
@@ -1319,7 +1372,7 @@ form button:hover {
         font-size: 30px;
         width: 300px;
         line-height: 1.3;
-        color: white;
+        color: var(--color-blanco);
     
     }
     .margen-cell{
@@ -1410,6 +1463,23 @@ form button:hover {
     }
     .derechos2{
         margin-right: 0px;
+    }
+
+    .info{
+        width: 300px;
+    }
+
+    .info h1 {
+        font-size: 16px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .info h3{
+        font-size: 12px;
+    }
+    .info p{
+        width: 340px;
+        font-size: 13px;
     }
 }
 

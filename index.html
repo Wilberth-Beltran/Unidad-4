@@ -12,10 +12,15 @@
     <script src="scripts/fancybox.js"></script>
     <script src="scripts/wow.min.js"></script>
     <script src="scripts/responsiveslides.js"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:wdth,wght@75..100,517&display=swap" rel="stylesheet">
+
     <title>Document</title>
 </head>
 <body>
-    <header>
+    <header id="arriba">
         <div class="padre-div1">
             <div class="hijo-div1">
                 <div class="hijo-del-hijo">
@@ -50,19 +55,19 @@
             </div>
             <div class="menu-hijo2">
                 <ul id="ul01" class="ul1">
-                    <li><a href='#'>Home</a></li>
-                    <li><a href='#'>Company</a></li>
-                    <li><a href='#'>Portafolio</a></li>
-                    <li><a href='#'>Services</a></li>
-                    <li><a href='#'>Blog</a></li>
-                    <li><a href='#'>Contact</a></li>
+                    <li><a href='#home'>Home</a></li>
+                    <li><a href='#company'>Company</a></li>
+                    <li><a href='#portafolio'>Portafolio</a></li>
+                    <li><a href='#service'>Services</a></li>
+                    <li><a href='#blog'>Blog</a></li>
+                    <li><a href='#contac'>contac</a></li>
                     <a class="booto1" href="">Get In Touch</a>
                 </ul>
             </div>
         </div>
     </header>
     
-    <div class="slider1">
+    <div id="home" class="slider1">
         <div class="margen hijo-slider1">
             <h1>WELCOME TO <span style="color: #21B6FF;" >WATER</span></h1>
             <h2>Highest Quality Water Services 24 Hours.</h2>
@@ -195,7 +200,7 @@
     </section>
 
     <br><br>
-    <section class="diseñopagado2">
+    <section id="service" class="diseñopagado2">
         <!-- Contenedor del carrusel -->
         <section class="letras-diseño">
           <div>
@@ -289,7 +294,7 @@
 
 <!-- FANSY BOY-->
 
-<section class="contendor_principal_slide">
+<section id="portafolio" class="contendor_principal_slide">
   <div class="tamaño2">
     
     <h3>WORKING PROCESS</h3>
@@ -339,16 +344,14 @@
 
             <div class="info">
                 <h3>Our Solution</h3>
-                <br>
+                
                 <h1>Bottled Water Delivery & Service</h1>
-                <br>
+                
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do iu tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
-                <br>
                 <h4><i class="fa-regular fa-square-check"></i> Hygenic and Ergonomic Bottles</h4>
                 <h4><i class="fa-regular fa-square-check"></i> 5 Steps Filtration Plants</h4>
                 <h4><i class="fa-regular fa-square-check"></i> Free Delivery On Weekends</h4>
                 <h4><i class="fa-regular fa-square-check"></i> Best For Health & Hydration</h4>
-                <a href="#">More Solution <i class="fa-solid fa-arrow-right"></i></a>
             </div>
             <div>
                 <button id="back-button3" class="carousel-btn3">Previous</button>
@@ -361,7 +364,7 @@
         <!-- -----------FIN DEL SLIDE--------------- -->
 
 
-        <section class="seccion-slide">
+        <section id="company" class="seccion-slide">
             <div class="acordeon_titulo ancho">
                 <h1>Water Selector</h1>
                 <i class="fa-solid fa-arrow-down"></i>
@@ -558,7 +561,7 @@
 
         <br><br><br>
 
-        <section>
+        <section id="contac">
             <article class="fotoparalax">
                 <div class="letras1">
                     <p>PARA MÁS INFORMACION PUEDES CONTACTARNOS</p>
@@ -566,7 +569,7 @@
                         <a class="clasbotonmodalcont" onclick="openModal()">Contactar</a>
                     </div>    
                 </div>
-                <div class="degradado"></div>
+                <div class="degradado2"></div>
             </article>
         </section>
 
@@ -598,7 +601,7 @@
 
         <br><br><br>
 
-        <section class="seccionfinal ancho">
+        <section id="blog" class="seccionfinal ancho">
             <h4>Our Blog</h4>
             <h1>Our Latest News</h1>
             <div class="seccionfinaldiv ">
@@ -658,7 +661,9 @@
 
         <br><br><br><br><br>
 
-
+        <div>
+            <a class="flecha" href="#arriba"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
 
 
 <footer class="footerprincipal">
